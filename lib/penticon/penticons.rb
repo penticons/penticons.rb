@@ -16,7 +16,7 @@ class Penticons
 	def svg_string
 		generate_background()
 		generate_foreground()
-		puts @svg.get_string()
+
 		return @svg.get_string()
 	end
 
@@ -68,7 +68,6 @@ class Penticons
 
 		while i < 25 do
 			@tile_color[i] = @tile_color[i-(10*(i/10))]
-			puts @tile_color[i]
 			i = i + 1
 		end
 	end
