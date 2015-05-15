@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "An implementation of Penticons in ruby programming language"
   s.authors     = ["Nairitya Khilari"]
   s.email       = 'nairityakhilari@gmail.com'
-  s.files       = ["lib/penticon.rb"]
+  s.files       = `git ls-files`.split("\n") | Dir.glob('lib/penticon/*')
   s.homepage    = ''
   s.license       = 'MIT'
 end
