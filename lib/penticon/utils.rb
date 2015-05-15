@@ -3,7 +3,7 @@ require 'digest/sha1'
 class Utils
 
 	def initialize
-
+		@colors = []
 		@colors[0] = "#eeeeee"
 		@colors[1] = "#d6e685"
 		@colors[2] = "#8cc665"

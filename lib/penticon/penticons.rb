@@ -16,9 +16,11 @@ class Penticons
 		@svg = Svg.new
 	end
 
-	def svg_string()
+	def svg_string
 		generate_background()
 		generate_foreground()
+
+		return @svg.get_string()
 	end
 
 	def generate_background
@@ -29,7 +31,7 @@ class Penticons
 
 		args = {:fill => @util.instance_variable_get(:@backgound)}
 
-		@svg.Rect(0, 0, size, size, args)
+		@svg.rect(0, 0, size, size, args)
 	end
 
 	def generate_foreground

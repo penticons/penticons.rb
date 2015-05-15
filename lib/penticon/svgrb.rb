@@ -1,7 +1,7 @@
 class Svg
 	
 	def initialize
-		@svg_string = nil
+		@svg_string = ""
 		@height = nil
 		@width = nil
 	end
@@ -15,11 +15,15 @@ class Svg
 	end
 
 	def header()
-		return "<svg xmlns='http://www.w3.org/2000/svg' width='#{@width}' height='#{height}'>"
+		return "<svg xmlns='http://www.w3.org/2000/svg' width='#{@width}' height='#{@height}'>"
 	end
 
 	def footer()
 		return "</svg>"
+	end
+
+	def get_string()
+		return header() + @svg_string + footer()
 	end
 
 	def rect(x, y, w, h, args)

@@ -6,11 +6,8 @@ require "penticon/penticons"
 
 class Penticon
 
-	def initialize
-		@penticons = Penticons.new
-	end
-
 	def self.uri_image(string='nkman')
+		@penticons = Penticons.new
 		base64_str = base64_string(string)
 		return "url(data:image/svg+xml;base64,#{base64_str});"
 	end
@@ -22,8 +19,8 @@ class Penticon
 	end
 
 	def self.generate(string)
-		p = @penticons.create(string)
-		return p.Svg_string()
+		@penticons.create(string)
+		return @penticons.svg_string()
 	end
 
 end
