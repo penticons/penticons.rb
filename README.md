@@ -4,7 +4,9 @@ The penticon Gem
 
 Identicons similar to GitHub's contribution activity calendar.
 
-
+[![Gem Version](https://badge.fury.io/rb/penticon.svg)](http://badge.fury.io/rb/penticon)
+[![Code Climate](https://codeclimate.com/github/penticons/penticons.rb/badges/gpa.svg)](https://codeclimate.com/github/penticons/penticons.rb)
+[![Downloads](http://img.shields.io/gem/dt/penticon.svg)](http://rubygems.org/gems/penticon)
 ```go
 require 'penticon'
 
