@@ -40,6 +40,7 @@ class Svg
 		args.gsub! '>', ''
 		args.gsub! ':', ''
 
+		# puts args
 		return args
 	end
 end

@@ -1,13 +1,13 @@
 require 'base64'
 
-require "penticon/utils"
-require "penticon/svgrb"
-require "penticon/penticons"
+require_relative "penticon/utils"
+require_relative "penticon/svgrb"
+require_relative "penticon/penticons"
 
 class Penticon
 
 	def self.uri_image(string='nkman')
-		@penticons = Penticons.new
+		@penticons = Penticons.new(Utils.new, Svg.new)
 		base64_str = base64_string(string)
 		return "url(data:image/svg+xml;base64,#{base64_str});"
 	end
@@ -24,3 +24,5 @@ class Penticon
 	end
 
 end
+
+puts Penticon.uri_image('Penticons')
