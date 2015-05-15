@@ -11,7 +11,7 @@ Identicons similar to GitHub's contribution activity calendar.
 require 'penticon'
 
 arg = "Penticons"
-p = Penticon.Uri_image(arg)
+p = Penticon.uri_image(arg)
 print p
 ```
 
